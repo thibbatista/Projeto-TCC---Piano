@@ -1,0 +1,245 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://assests/lock.png" type="Texture" id=3]
+[ext_resource path="res://assests/fundo_level.png" type="Texture" id=4]
+[ext_resource path="res://assests/Group_9.png" type="Texture" id=5]
+[ext_resource path="res://assests/ARROW copy 2.png" type="Texture" id=6]
+[ext_resource path="res://assests/Group_1.png" type="Texture" id=8]
+[ext_resource path="res://assests/Group_5.png" type="Texture" id=9]
+[ext_resource path="res://assests/Group_4.png" type="Texture" id=10]
+[ext_resource path="res://assests/botao_home.png" type="Texture" id=11]
+[ext_resource path="res://assests/Group_3.png" type="Texture" id=12]
+[ext_resource path="res://assests/Levels_limpo.png" type="Texture" id=13]
+[ext_resource path="res://assests/estrelinha.png" type="Texture" id=15]
+[ext_resource path="res://assests/Group_2.png" type="Texture" id=16]
+[ext_resource path="res://assests/Group_8.png" type="Texture" id=17]
+[ext_resource path="res://assests/Group_7.png" type="Texture" id=18]
+[ext_resource path="res://assests/Group_0.png" type="Texture" id=19]
+[ext_resource path="res://assests/Group_6.png" type="Texture" id=20]
+[ext_resource path="res://script/container_level_iniciante.gd" type="Script" id=21]
+[ext_resource path="res://cenas/level_iniciante.tscn" type="PackedScene" id=22]
+
+[node name="container_level_iniciante" type="Node2D"]
+position = Vector2( -14.4904, -1.71262 )
+script = ExtResource( 21 )
+
+[node name="lock" type="Sprite" parent="."]
+visible = false
+position = Vector2( 889.772, 326.462 )
+z_index = 3
+texture = ExtResource( 3 )
+
+[node name="fundo_level" type="Sprite" parent="."]
+position = Vector2( 668.423, 334.836 )
+z_index = 2
+texture = ExtResource( 4 )
+
+[node name="next_" type="TouchScreenButton" parent="."]
+position = Vector2( 869.324, 302.063 )
+z_index = 2
+normal = ExtResource( 6 )
+
+[node name="back_" type="TouchScreenButton" parent="."]
+position = Vector2( 464.208, 347.072 )
+rotation = -3.14159
+z_index = 2
+normal = ExtResource( 6 )
+
+[node name="home_aprender" type="TouchScreenButton" parent="."]
+position = Vector2( 637.082, 434.921 )
+z_index = 2
+normal = ExtResource( 11 )
+
+[node name="Levelslimpo" type="Sprite" parent="."]
+position = Vector2( 669.339, 311.98 )
+texture = ExtResource( 13 )
+
+[node name="estrelinha" type="Sprite" parent="."]
+visible = false
+position = Vector2( 774, 171.061 )
+scale = Vector2( 0.4, 0.4 )
+texture = ExtResource( 15 )
+
+[node name="nivel_1" type="Node2D" parent="."]
+visible = false
+position = Vector2( -53.6545, -1.91266 )
+z_index = 1
+
+[node name="level_1" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 543, 255 )
+level = 1
+
+[node name="Group_1" type="Sprite" parent="nivel_1/level_1"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="level_2" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 643, 255 )
+level = 2
+
+[node name="Group_2" type="Sprite" parent="nivel_1/level_2"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 16 )
+
+[node name="level_3" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 745, 255 )
+level = 3
+
+[node name="Group_3" type="Sprite" parent="nivel_1/level_3"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 12 )
+
+[node name="level_4" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 847, 255 )
+level = 4
+
+[node name="Group_4" type="Sprite" parent="nivel_1/level_4"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 10 )
+
+[node name="level_5" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 551.91, 360 )
+level = 5
+
+[node name="Group_5" type="Sprite" parent="nivel_1/level_5"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 9 )
+
+[node name="level_6" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 647, 360 )
+level = 6
+
+[node name="Group_6" type="Sprite" parent="nivel_1/level_6"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 20 )
+
+[node name="level_7" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 741.797, 360 )
+level = 7
+
+[node name="Group_7" type="Sprite" parent="nivel_1/level_7"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 18 )
+
+[node name="level_8" parent="nivel_1" instance=ExtResource( 22 )]
+position = Vector2( 836.241, 360 )
+level = 8
+
+[node name="Group_8" type="Sprite" parent="nivel_1/level_8"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 17 )
+
+[node name="nivel_2" type="Node2D" parent="."]
+visible = false
+position = Vector2( 0, -1.89999 )
+
+[node name="level_9" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 489.291, 255 )
+level = 9
+
+[node name="Group_9" type="Sprite" parent="nivel_2/level_9"]
+position = Vector2( 26, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="level_10" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 589.679, 255 )
+level = 10
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_10"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_0" type="Sprite" parent="nivel_2/level_10/Group_1"]
+position = Vector2( 85.1157, -0.000366211 )
+texture = ExtResource( 19 )
+
+[node name="level_11" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 691.336, 255 )
+level = 11
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_11"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_11/Group_1"]
+position = Vector2( 95.7957, 1.08429 )
+texture = ExtResource( 8 )
+
+[node name="level_12" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 793.05, 255 )
+level = 12
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_12"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_2" type="Sprite" parent="nivel_2/level_12/Group_1"]
+position = Vector2( 92.9419, -0.540344 )
+texture = ExtResource( 16 )
+
+[node name="level_13" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 498.73, 360 )
+level = 13
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_13"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_3" type="Sprite" parent="nivel_2/level_13/Group_1"]
+position = Vector2( 99.4856, 2.43839 )
+texture = ExtResource( 12 )
+
+[node name="level_14" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 594.005, 360 )
+level = 14
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_14"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_4" type="Sprite" parent="nivel_2/level_14/Group_1"]
+position = Vector2( 87.7814, 0 )
+texture = ExtResource( 10 )
+
+[node name="level_15" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 688.056, 360 )
+level = 15
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_15"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_5" type="Sprite" parent="nivel_2/level_15/Group_1"]
+position = Vector2( 95.5842, 2.43839 )
+texture = ExtResource( 9 )
+
+[node name="level_16" parent="nivel_2" instance=ExtResource( 22 )]
+position = Vector2( 782.387, 360 )
+level = 16
+
+[node name="Group_1" type="Sprite" parent="nivel_2/level_16"]
+position = Vector2( 20, 26 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
+
+[node name="Group_6" type="Sprite" parent="nivel_2/level_16/Group_1"]
+position = Vector2( 99.9732, 2.43839 )
+texture = ExtResource( 20 )
+
+[connection signal="pressed" from="next_" to="." method="_on_next__pressed"]
+[connection signal="pressed" from="back_" to="." method="_on_back__pressed"]

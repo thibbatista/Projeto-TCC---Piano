@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/G#3.wav-1e59c0f32100d59f3d9f9f914e06f992.sample"
+
+[deps]
+
+source_file="res://cenas/piano/Sounds/notas/G#3.wav"
+dest_files=[ "res://.import/G#3.wav-1e59c0f32100d59f3d9f9f914e06f992.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,1393 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://assests/seminima.png" type="Texture" id=1]
+[ext_resource path="res://cenas/aprender/nivel_2/licao2.gd" type="Script" id=2]
+[ext_resource path="res://cenas/piano/Scene/Main.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cenas/NOTAS/fa4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cenas/NOTAS/re4.tscn" type="PackedScene" id=5]
+[ext_resource path="res://cenas/NOTAS/mi4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://cenas/NOTAS/do4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assests/START2.png" type="Texture" id=9]
+[ext_resource path="res://cenas/aprender/nivel_1/pentagrama-1-1.png" type="Texture" id=10]
+[ext_resource path="res://assests/seminima_do.png" type="Texture" id=11]
+[ext_resource path="res://assests/fundo_start.png" type="Texture" id=12]
+[ext_resource path="res://assests/pngwave.png" type="Texture" id=13]
+[ext_resource path="res://fontes/Winter Break.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://assests/concerto_5.ogg" type="AudioStream" id=15]
+[ext_resource path="res://assests/home green.png" type="Texture" id=16]
+[ext_resource path="res://assests/Circulo2.png" type="Texture" id=18]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 25.1102, 107.23 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 160.413, 78.0464 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "tela_1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("notas_1/do/do4:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.38484, 32.7709 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("notas_1/do/do4:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("notas_1/do/do4:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("notas_1/re2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1098.41, -78.6877 ), Vector2( 1100, 218.156 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("notas_1/re2:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("notas_1/re2:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("notas_1/fa2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 798.413, -106.295 ), Vector2( 800, 187.374 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("notas_1/fa2:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("notas_1/fa2:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("notas_1/mi2:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 948.413, -97.8608 ), Vector2( 950, 200.571 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("notas_1/mi2:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("notas_1/mi2:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("notas_1/do2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1248.41, -72.0127 ), Vector2( 1250, 223.244 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("notas_1/do2:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("notas_1/do2:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("notas_1/re:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 348.413, -77.5658 ), Vector2( 350, 214.516 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("notas_1/re:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("notas_1/re:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("notas_1/do:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 198.413, -70.8907 ), Vector2( 200, 224.366 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("notas_1/do:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("notas_1/do:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("notas_1/fa:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 648.413, -102.928 ), Vector2( 650, 189.154 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("notas_1/fa:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("notas_1/fa:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/24/type = "value"
+tracks/24/path = NodePath("notas_1/mi:position")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 498.413, -92.2488 ), Vector2( 500, 198.246 ) ]
+}
+tracks/25/type = "value"
+tracks/25/path = NodePath("notas_1/mi:rotation_degrees")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/26/type = "value"
+tracks/26/path = NodePath("notas_1/mi:scale")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/27/type = "value"
+tracks/27/path = NodePath("notas_1/re2/re4:position")
+tracks/27/interp = 1
+tracks/27/loop_wrap = true
+tracks/27/imported = false
+tracks/27/enabled = true
+tracks/27/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( -0.232803, 25.4155 ) ]
+}
+tracks/28/type = "value"
+tracks/28/path = NodePath("notas_1/re2/re4:rotation_degrees")
+tracks/28/interp = 1
+tracks/28/loop_wrap = true
+tracks/28/imported = false
+tracks/28/enabled = true
+tracks/28/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0.0 ]
+}
+tracks/29/type = "value"
+tracks/29/path = NodePath("notas_1/re2/re4:scale")
+tracks/29/interp = 1
+tracks/29/loop_wrap = true
+tracks/29/imported = false
+tracks/29/enabled = true
+tracks/29/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "tela_2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("notas_2/do:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 207.492, 226.112 ), Vector2( 190, 528.77 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("notas_2/do:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("notas_2/mi2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1250, 197.306 ), Vector2( 1240, 507.456 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("notas_2/mi2:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("notas_2/re2:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1100, 210.486 ), Vector2( 1090, 517.654 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("notas_2/re2:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("notas_2/fa:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 650, 189.072 ), Vector2( 651.498, 213.045 ), Vector2( 640, 494.222 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("notas_2/fa:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("notas_2/re:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 500, 214.434 ), Vector2( 490, 519.723 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("notas_2/re:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("notas_2/fa2:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 950, 188.872 ), Vector2( 940, 494.527 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("notas_2/fa2:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("notas_2/do2:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 800, 227.649 ), Vector2( 790, 524.623 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("notas_2/do2:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("notas_2/mi:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 350, 203.751 ), Vector2( 340, 504.169 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("notas_2/mi:rotation_degrees")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("notas_2/re:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ) ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("notas_2/fa:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0.4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("notas_2/re2:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0.7 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 24.0989, 105.517 )
+
+[sub_resource type="Animation" id=6]
+resource_name = "start"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("start:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("start:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.478431 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("START2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.9, 0.9 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "sai_tela1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("notas_1/re:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 350, 214.516 ), Vector2( 341.515, -103.682 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("notas_1/re:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("notas_1/re:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("notas_1/do2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1250, 223.244 ), Vector2( 1241.51, -94.9541 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("notas_1/do2:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("notas_1/do2:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("notas_1/re2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1100, 218.156 ), Vector2( 1091.51, -100.042 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("notas_1/re2:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("notas_1/re2:scale")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("notas_1/fa:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 650, 189.154 ), Vector2( 641.515, -129.044 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("notas_1/fa:rotation_degrees")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("notas_1/fa:scale")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("notas_1/do:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 200, 224.366 ), Vector2( 191.515, -93.8321 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("notas_1/do:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("notas_1/do:scale")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/15/type = "value"
+tracks/15/path = NodePath("notas_1/mi2:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 950, 200.571 ), Vector2( 941.515, -117.627 ) ]
+}
+tracks/16/type = "value"
+tracks/16/path = NodePath("notas_1/mi2:rotation_degrees")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/17/type = "value"
+tracks/17/path = NodePath("notas_1/mi2:scale")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/18/type = "value"
+tracks/18/path = NodePath("notas_1/mi:position")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 500, 198.246 ), Vector2( 491.515, -119.952 ) ]
+}
+tracks/19/type = "value"
+tracks/19/path = NodePath("notas_1/mi:rotation_degrees")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/20/type = "value"
+tracks/20/path = NodePath("notas_1/mi:scale")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+tracks/21/type = "value"
+tracks/21/path = NodePath("notas_1/fa2:position")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 800, 187.374 ), Vector2( 791.515, -130.824 ) ]
+}
+tracks/22/type = "value"
+tracks/22/path = NodePath("notas_1/fa2:rotation_degrees")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ 0.0, 0.0 ]
+}
+tracks/23/type = "value"
+tracks/23/path = NodePath("notas_1/fa2:scale")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1.5, 1.5 ), Vector2( 1.5, 1.5 ) ]
+}
+
+[sub_resource type="DynamicFont" id=8]
+size = 60
+outline_size = 1
+outline_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 14 )
+
+[node name="licao_1" type="KinematicBody2D"]
+position = Vector2( -1.64819, 1.85928 )
+script = ExtResource( 2 )
+level = 1
+
+[node name="start" type="TouchScreenButton" parent="."]
+position = Vector2( 596.36, 42.3984 )
+z_index = 1
+normal = ExtResource( 12 )
+
+[node name="START2" type="Sprite" parent="."]
+position = Vector2( 662.867, 68.2994 )
+z_index = 1
+texture = ExtResource( 9 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+margin_left = 4.50964
+margin_top = -1.04626
+margin_right = 1356.51
+margin_bottom = 594.953
+color = Color( 0.803922, 0, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 362.45, 197.48 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="player"]
+margin_left = -27.6504
+margin_top = -110.476
+margin_right = 32.3496
+margin_bottom = 113.524
+color = Color( 0.0901961, 0.709804, 0.92549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" parent="." instance=ExtResource( 3 )]
+position = Vector2( 58.8466, 520.195 )
+z_index = 3
+
+[node name="pentagrama-1-1" type="Sprite" parent="."]
+position = Vector2( 1142.56, 156.633 )
+scale = Vector2( 1.0156, 1 )
+texture = ExtResource( 10 )
+
+[node name="nova_animacao" type="Area2D" parent="."]
+position = Vector2( 58.8466, 520.195 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nova_animacao"]
+position = Vector2( 1456.47, -322.633 )
+shape = SubResource( 2 )
+
+[node name="notas_1" type="Node2D" parent="."]
+visible = false
+
+[node name="re" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0431373, 0.0431373, 0.0431373, 1 )
+position = Vector2( 350, 214.516 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="re4" parent="notas_1/re" instance=ExtResource( 5 )]
+position = Vector2( 1.88374, 31.7651 )
+
+[node name="re2" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1100, 218.156 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="re4" parent="notas_1/re2" instance=ExtResource( 5 )]
+position = Vector2( -0.232803, 25.4155 )
+
+[node name="mi" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 500, 198.246 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="mi4" parent="notas_1/mi" instance=ExtResource( 6 )]
+position = Vector2( -1.06427, 29.6649 )
+
+[node name="mi2" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 950, 200.571 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="mi4" parent="notas_1/mi2" instance=ExtResource( 6 )]
+position = Vector2( -1.06427, 29.6649 )
+
+[node name="fa" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 650, 189.154 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="fa4" parent="notas_1/fa" instance=ExtResource( 4 )]
+position = Vector2( 1.76379, 27.8853 )
+
+[node name="fa2" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 800, 187.374 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="fa4" parent="notas_1/fa2" instance=ExtResource( 4 )]
+position = Vector2( 1.76379, 27.8853 )
+
+[node name="do" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 200, 224.366 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 11 )
+
+[node name="do4" parent="notas_1/do" instance=ExtResource( 7 )]
+position = Vector2( 1.38484, 32.7709 )
+
+[node name="do2" type="Sprite" parent="notas_1"]
+modulate = Color( 0.356863, 0.494118, 0.172549, 1 )
+position = Vector2( 1250, 223.244 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 11 )
+
+[node name="do4" parent="notas_1/do2" instance=ExtResource( 7 )]
+position = Vector2( -0.731689, 30.6544 )
+
+[node name="notas_2" type="Node2D" parent="."]
+visible = false
+position = Vector2( 8.98984, -308.651 )
+
+[node name="re" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 500, 214.434 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="re4" parent="notas_2/re" instance=ExtResource( 5 )]
+position = Vector2( 1.88374, 31.7651 )
+
+[node name="re2" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1100, 210.486 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="re4" parent="notas_2/re2" instance=ExtResource( 5 )]
+position = Vector2( -0.232803, 25.4155 )
+
+[node name="mi" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 350, 203.751 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="mi4" parent="notas_2/mi" instance=ExtResource( 6 )]
+position = Vector2( -1.06427, 31.9098 )
+
+[node name="mi2" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1250, 197.306 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="mi4" parent="notas_2/mi2" instance=ExtResource( 6 )]
+position = Vector2( -0.315918, 29.6649 )
+
+[node name="fa" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 650, 189.072 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="fa4" parent="notas_2/fa" instance=ExtResource( 4 )]
+position = Vector2( -2.23166, 30.8819 )
+
+[node name="fa2" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 950, 188.872 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+
+[node name="fa4" parent="notas_2/fa2" instance=ExtResource( 4 )]
+position = Vector2( 1.76379, 27.8853 )
+
+[node name="do" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 207.492, 226.112 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 11 )
+
+[node name="do4" parent="notas_2/do" instance=ExtResource( 7 )]
+position = Vector2( 1.38484, 34.1042 )
+
+[node name="do2" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 800, 227.649 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 11 )
+
+[node name="do4" parent="notas_2/do2" instance=ExtResource( 7 )]
+position = Vector2( -0.731689, 30.6544 )
+
+[node name="tela_1" type="AnimationPlayer" parent="."]
+anims/tela_1 = SubResource( 3 )
+
+[node name="tela_2" type="AnimationPlayer" parent="."]
+anims/tela_2 = SubResource( 4 )
+
+[node name="inicio" type="Area2D" parent="."]
+position = Vector2( 15.7144, 7.85724 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="inicio"]
+position = Vector2( 196.691, 186.054 )
+shape = SubResource( 5 )
+
+[node name="start2" type="AnimationPlayer" parent="."]
+autoplay = "start"
+playback_speed = 0.5
+anims/start = SubResource( 6 )
+
+[node name="sai_tela1" type="AnimationPlayer" parent="."]
+anims/sai_tela1 = SubResource( 7 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 4.76233, 0 )
+z_index = 2
+anchor_mode = 0
+rotating = true
+current = true
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="temporizador" type="Timer" parent="."]
+one_shot = true
+
+[node name="info" type="Node" parent="."]
+
+[node name="Popup" type="Popup" parent="info"]
+margin_left = -2.0
+margin_top = -1.0
+margin_right = 602.0
+margin_bottom = 121.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="primeira_nota" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 71.6813
+margin_top = 2.86386
+margin_right = 589.681
+margin_bottom = 149.864
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "Vamos aprender a primeiras notas.
+         Dó Ré Mi e Fá"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vamos_dificultar" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 71.6813
+margin_top = 2.86386
+margin_right = 589.681
+margin_bottom = 149.864
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "agora vamos dificultar um pouco"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sem_ajuda" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 822.071
+margin_top = 7.6207
+margin_right = 1340.07
+margin_bottom = 154.621
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "mas sem as marcações"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parabens" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 71.6813
+margin_top = 2.86386
+margin_right = 589.681
+margin_bottom = 149.864
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "Parabéns , você passou este nivel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="perfeito" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 93.087
+margin_top = 67.081
+margin_right = 611.087
+margin_bottom = 214.081
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "           perfeito!!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="poderia_melhorar" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 837.531
+margin_top = 2.86385
+margin_right = 1355.53
+margin_bottom = 149.864
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "mas, poderia melhorar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="voce_errou" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 838.72
+margin_top = 63.7566
+margin_right = 1356.72
+margin_bottom = 210.757
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "você errou "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="notas" type="Label" parent="info/Popup/voce_errou"]
+margin_left = 229.517
+margin_top = -1.4324
+margin_right = 747.517
+margin_bottom = 145.568
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 8 )
+text = "notas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="erros" type="Label" parent="info/Popup/voce_errou"]
+margin_left = 178.381
+margin_top = 0.946053
+margin_right = 696.381
+margin_bottom = 147.946
+size_flags_stretch_ratio = 0.0
+custom_colors/font_color = Color( 0.952941, 0.933333, 0.0431373, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "123"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pngwave" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.933333 )
+position = Vector2( 494.422, 324.176 )
+z_index = -1
+texture = ExtResource( 13 )
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 15 )
+volume_db = -15.0
+autoplay = true
+
+[node name="home" type="TouchScreenButton" parent="."]
+position = Vector2( 1283.15, 19.0273 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 16 )
+
+[node name="Circulo2" type="Sprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.705882 )
+self_modulate = Color( 0.905882, 0.933333, 0.941176, 1 )
+position = Vector2( 53.2413, 532.047 )
+z_index = 3
+texture = ExtResource( 18 )
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Main/Piano/A4" to="." method="_on_A4_pressed"]
+[connection signal="pressed" from="Main/Piano/D5" to="." method="_on_D5_pressed"]
+[connection signal="pressed" from="Main/Piano/F4" to="." method="_on_F4_pressed"]
+[connection signal="pressed" from="Main/Piano/C5" to="." method="_on_C5_pressed"]
+[connection signal="pressed" from="Main/Piano/G4" to="." method="_on_G4_pressed"]
+[connection signal="pressed" from="Main/Piano/C4" to="." method="_on_C4_pressed"]
+[connection signal="pressed" from="Main/Piano/D4" to="." method="_on_D4_pressed"]
+[connection signal="pressed" from="Main/Piano/G3" to="." method="_on_G3_pressed"]
+[connection signal="pressed" from="Main/Piano/F5" to="." method="_on_F5_pressed"]
+[connection signal="pressed" from="Main/Piano/A3" to="." method="_on_A3_pressed"]
+[connection signal="pressed" from="Main/Piano/B4" to="." method="_on_B4_pressed"]
+[connection signal="pressed" from="Main/Piano/E5" to="." method="_on_E5_pressed"]
+[connection signal="pressed" from="Main/Piano/G5" to="." method="_on_G5_pressed"]
+[connection signal="pressed" from="Main/Piano/C5sus" to="." method="_on_C5sus_pressed"]
+[connection signal="pressed" from="Main/Piano/A4sus" to="." method="_on_A4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/D5sus" to="." method="_on_D5sus_pressed"]
+[connection signal="pressed" from="Main/Piano/G4sus" to="." method="_on_G4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/F4sus" to="." method="_on_F4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/E4" to="." method="_on_E4_pressed"]
+[connection signal="pressed" from="Main/Piano/D4sus" to="." method="_on_D4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/C4sus" to="." method="_on_C4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/B3" to="." method="_on_B3_pressed"]
+[connection signal="pressed" from="Main/Piano/A3sus" to="." method="_on_A3sus_pressed"]
+[connection signal="pressed" from="Main/Piano/G3sus" to="." method="_on_G3sus_pressed"]
+[connection signal="pressed" from="Main/Piano/F5sus" to="." method="_on_F5sus_pressed"]
+[connection signal="body_entered" from="nova_animacao" to="." method="_on_nova_animacao_body_entered"]
+[connection signal="animation_finished" from="tela_1" to="." method="_on_tela_1_animation_finished"]
+[connection signal="animation_finished" from="tela_2" to="." method="_on_tela_2_animation_finished"]
+[connection signal="body_entered" from="inicio" to="." method="_on_inicio_body_entered"]
+[connection signal="timeout" from="temporizador" to="." method="_on_temporizador_timeout"]
+[connection signal="pressed" from="home" to="." method="_on_home_pressed"]
+
+[editable path="Main"]
+[editable path="Main/teclas_brancas"]

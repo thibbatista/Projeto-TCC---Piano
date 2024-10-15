@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/F#4.wav-7f374d8aed182fe0824e89b69652f8fb.sample"
+
+[deps]
+
+source_file="res://cenas/piano/Sounds/notas/F#4.wav"
+dest_files=[ "res://.import/F#4.wav-7f374d8aed182fe0824e89b69652f8fb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

@@ -1,0 +1,712 @@
+[gd_scene load_steps=28 format=2]
+
+[ext_resource path="res://cenas/NOTAS/mi5.tscn" type="PackedScene" id=1]
+[ext_resource path="res://cenas/NOTAS/sol4_sus.tscn" type="PackedScene" id=2]
+[ext_resource path="res://cenas/NOTAS/si4.tscn" type="PackedScene" id=3]
+[ext_resource path="res://cenas/NOTAS/la4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://cenas/NOTAS/fa4_sus.tscn" type="PackedScene" id=5]
+[ext_resource path="res://cenas/piano/Scene/Main.tscn" type="PackedScene" id=6]
+[ext_resource path="res://cenas/NOTAS/mi4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://cenas/NOTAS/re5_sus.tscn" type="PackedScene" id=8]
+[ext_resource path="res://cenas/NOTAS/do5_sus.tscn" type="PackedScene" id=9]
+[ext_resource path="res://cenas/aprender/nivel_2/licao2.gd" type="Script" id=10]
+[ext_resource path="res://assests/fundo_start.png" type="Texture" id=11]
+[ext_resource path="res://assests/seminima.png" type="Texture" id=12]
+[ext_resource path="res://assests/pngwave.png" type="Texture" id=13]
+[ext_resource path="res://assests/Circulo2.png" type="Texture" id=14]
+[ext_resource path="res://assests/START2.png" type="Texture" id=15]
+[ext_resource path="res://fontes/Winter Break.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://assests/pentagrama_mi-1.png" type="Texture" id=17]
+[ext_resource path="res://assests/concerto_5.ogg" type="AudioStream" id=18]
+[ext_resource path="res://assests/home green.png" type="Texture" id=19]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 25.1102, 107.23 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 160.413, 78.0464 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "tela_1"
+tracks/0/type = "value"
+tracks/0/path = NodePath("notas_1/1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 271.816, 240.284 ), Vector2( 300, 524.974 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("notas_1/2:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 415.516, 234.82 ), Vector2( 440, 514.765 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("notas_1/3:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 561.736, 226.064 ), Vector2( 580, 503.302 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("notas_1/4:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 715.516, 216.202 ), Vector2( 720, 490.112 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("notas_1/5:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 874.335, 213.168 ), Vector2( 860, 478.479 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("notas_1/6:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1010.48, 209.687 ), Vector2( 1000, 469.849 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("notas_1/7:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1168.04, 214.86 ), Vector2( 1140, 454.978 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("notas_1/8:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1315.52, 202.351 ), Vector2( 1280, 445.837 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "tela_2"
+tracks/0/type = "value"
+tracks/0/path = NodePath("notas_2/1:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 235.781, 247.216 ), Vector2( 300, 446.873 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("notas_2/3:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 542.081, 224.928 ), Vector2( 580, 467.075 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("notas_2/5:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 837.041, 208 ), Vector2( 860, 489.579 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("notas_2/6:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 987.041, 192.724 ), Vector2( 1000, 500.791 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("notas_2/7:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1137.04, 212.322 ), Vector2( 1140, 512.856 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("notas_2/8:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0, 0.8 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1287.04, 236.075 ), Vector2( 1280, 525.572 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("notas_2/2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.2 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 389.561, 240.334 ), Vector2( 440, 459.115 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("notas_2/4:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 698.38, 216.133 ), Vector2( 720, 479.338 ) ]
+}
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 108.64, 105.517 )
+
+[sub_resource type="Animation" id=6]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("start:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("start:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0.478431 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("START2:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.9, 0.9 ), Vector2( 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+
+[sub_resource type="DynamicFont" id=9]
+size = 60
+outline_size = 1
+outline_color = Color( 0.0352941, 0.0352941, 0.0352941, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 16 )
+
+[node name="licao_15" type="KinematicBody2D"]
+position = Vector2( -7.64135, -47.5849 )
+script = ExtResource( 10 )
+level = 15
+
+[node name="start" type="TouchScreenButton" parent="."]
+position = Vector2( 596.36, 42.3984 )
+z_index = 1
+normal = ExtResource( 11 )
+
+[node name="START2" type="Sprite" parent="."]
+position = Vector2( 662.867, 68.2994 )
+z_index = 1
+texture = ExtResource( 15 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color( 1, 1, 1, 0.666667 )
+margin_left = 5.48669
+margin_top = 2.89081
+margin_right = 1357.49
+margin_bottom = 598.89
+color = Color( 0.796078, 0.0117647, 0.815686, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="player" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 200.327, 197.808 )
+shape = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="player"]
+margin_left = -20.4077
+margin_top = -113.304
+margin_right = 39.5923
+margin_bottom = 110.696
+color = Color( 0.0901961, 0.709804, 0.92549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Main" parent="." instance=ExtResource( 6 )]
+position = Vector2( 58.8466, 520.195 )
+z_index = 3
+
+[node name="pentagrama-1-1" type="Sprite" parent="."]
+position = Vector2( 681.989, 165.467 )
+scale = Vector2( 1.07167, 1.1 )
+texture = ExtResource( 17 )
+
+[node name="nova_animacao" type="Area2D" parent="."]
+position = Vector2( 58.8466, 520.195 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="nova_animacao"]
+position = Vector2( 1482.93, -325.153 )
+shape = SubResource( 2 )
+
+[node name="notas_1" type="Node2D" parent="."]
+visible = false
+position = Vector2( 8.98984, -308.651 )
+
+[node name="1" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 271.816, 240.284 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="mi4" parent="notas_1/1" instance=ExtResource( 7 )]
+position = Vector2( -1.44496, 29.2227 )
+
+[node name="2" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 415.516, 234.82 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="fa4_sus" parent="notas_1/2" instance=ExtResource( 5 )]
+position = Vector2( 1.33011, 29.8881 )
+
+[node name="3" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 561.736, 226.064 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="sol4_sus" parent="notas_1/3" instance=ExtResource( 2 )]
+position = Vector2( 1.43552, 27.411 )
+
+[node name="4" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 715.516, 216.202 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="la4" parent="notas_1/4" instance=ExtResource( 4 )]
+position = Vector2( -1.12881, 30.3696 )
+
+[node name="5" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 874.335, 213.168 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="si4" parent="notas_1/5" instance=ExtResource( 3 )]
+position = Vector2( 4.31592, 24.9429 )
+
+[node name="6" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1010.48, 209.687 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="do5_sus" parent="notas_1/6" instance=ExtResource( 9 )]
+position = Vector2( 1.75177, 28.5009 )
+
+[node name="7" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1168.04, 214.86 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="re5_sus" parent="notas_1/7" instance=ExtResource( 8 )]
+position = Vector2( 1.85718, 29.6722 )
+
+[node name="8" type="Sprite" parent="notas_1"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1315.52, 202.351 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="mi5" parent="notas_1/8" instance=ExtResource( 1 )]
+position = Vector2( 0.1828, 30.5429 )
+
+[node name="notas_2" type="Node2D" parent="."]
+visible = false
+position = Vector2( 8.98984, -308.651 )
+
+[node name="1" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 235.781, 247.216 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="mi5" parent="notas_2/1" instance=ExtResource( 1 )]
+position = Vector2( 4.78429, 26.6656 )
+
+[node name="2" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 389.561, 240.334 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="re5_sus" parent="notas_2/2" instance=ExtResource( 8 )]
+position = Vector2( 1.33011, 31.6239 )
+
+[node name="3" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 542.081, 224.928 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="do5_sus" parent="notas_2/3" instance=ExtResource( 9 )]
+position = Vector2( -2.12402, 26.5276 )
+
+[node name="4" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 698.38, 216.133 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="si4" parent="notas_2/4" instance=ExtResource( 3 )]
+position = Vector2( 5.99033, 25.3089 )
+
+[node name="5" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0313726, 0, 0, 1 )
+position = Vector2( 837.041, 208 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="la4" parent="notas_2/5" instance=ExtResource( 4 )]
+position = Vector2( 1.64624, 30.7796 )
+
+[node name="6" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 987.041, 192.724 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="sol4_sus" parent="notas_2/6" instance=ExtResource( 2 )]
+position = Vector2( -4.47748, 26.2622 )
+
+[node name="7" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1137.04, 212.322 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="fa4_sus" parent="notas_2/7" instance=ExtResource( 5 )]
+position = Vector2( -0.8125, 28.2762 )
+
+[node name="8" type="Sprite" parent="notas_2"]
+modulate = Color( 0.0117647, 0.0117647, 0.0117647, 1 )
+position = Vector2( 1287.04, 236.075 )
+scale = Vector2( 1.5, 1.3 )
+texture = ExtResource( 12 )
+
+[node name="mi4" parent="notas_2/8" instance=ExtResource( 7 )]
+position = Vector2( -4.26666, 25.6823 )
+
+[node name="tela_1" type="AnimationPlayer" parent="."]
+playback_speed = 0.7
+anims/tela_1 = SubResource( 3 )
+
+[node name="tela_2" type="AnimationPlayer" parent="."]
+playback_speed = 0.7
+anims/tela_2 = SubResource( 4 )
+
+[node name="inicio" type="Area2D" parent="."]
+position = Vector2( 15.7144, 7.85724 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="inicio"]
+position = Vector2( 233.229, 193.614 )
+shape = SubResource( 5 )
+
+[node name="start2" type="AnimationPlayer" parent="."]
+autoplay = "start"
+playback_speed = 0.5
+anims/start = SubResource( 6 )
+
+[node name="sai_tela1" type="AnimationPlayer" parent="."]
+anims/sai_tela1 = SubResource( 7 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 4.76233, 0 )
+z_index = 2
+anchor_mode = 0
+rotating = true
+current = true
+limit_smoothed = true
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="temporizador" type="Timer" parent="."]
+one_shot = true
+
+[node name="info" type="Node" parent="."]
+
+[node name="Popup" type="Popup" parent="info"]
+margin_left = -2.0
+margin_top = -1.0
+margin_right = 602.0
+margin_bottom = 121.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="primeira_nota" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 78.3555
+margin_top = -49.1949
+margin_right = 596.355
+margin_bottom = 97.8053
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "Essa é a escala de Mi maior
+Ela tem quatro sustenidos"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="vamos_dificultar" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 75.6858
+margin_top = -33.1768
+margin_right = 593.686
+margin_bottom = 113.823
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "agora vamos dificultar um pouco"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="sem_ajuda" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 826.076
+margin_top = -28.4199
+margin_right = 1344.07
+margin_bottom = 118.58
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "mas sem aquela ajudinha."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="parabens" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 73.0161
+margin_top = -34.5116
+margin_right = 591.016
+margin_bottom = 112.488
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "Parabéns , você passou este nivel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="perfeito" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 94.4218
+margin_top = 29.7055
+margin_right = 612.422
+margin_bottom = 176.706
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "           perfeito!!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="poderia_melhorar" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 844.205
+margin_top = -30.5071
+margin_right = 1362.2
+margin_bottom = 116.493
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "mas, poderia melhorar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="voce_errou" type="Label" parent="info/Popup"]
+visible = false
+margin_left = 845.394
+margin_top = 30.3856
+margin_right = 1363.39
+margin_bottom = 177.386
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "você errou "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="notas" type="Label" parent="info/Popup/voce_errou"]
+margin_left = 242.598
+margin_top = -1.43242
+margin_right = 760.598
+margin_bottom = 145.568
+size_flags_stretch_ratio = 0.0
+custom_fonts/font = SubResource( 9 )
+text = "notas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="erros" type="Label" parent="info/Popup/voce_errou"]
+margin_left = 186.706
+margin_top = 3.32447
+margin_right = 704.706
+margin_bottom = 150.324
+size_flags_stretch_ratio = 0.0
+custom_colors/font_color = Color( 0.952941, 0.933333, 0.0431373, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "123"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="pngwave" type="Sprite" parent="."]
+modulate = Color( 1, 1, 1, 0.933333 )
+position = Vector2( 437.812, 486.714 )
+z_index = -1
+texture = ExtResource( 13 )
+
+[node name="musica" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+volume_db = -15.0
+autoplay = true
+
+[node name="home" type="TouchScreenButton" parent="."]
+position = Vector2( 1290.79, 13.3484 )
+scale = Vector2( 0.8, 0.8 )
+normal = ExtResource( 19 )
+
+[node name="Circulo2" type="Sprite" parent="."]
+visible = false
+modulate = Color( 1, 1, 1, 0.705882 )
+position = Vector2( 47.3552, 536.066 )
+z_index = 3
+texture = ExtResource( 14 )
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Main/Piano/A4" to="." method="_on_A4_pressed"]
+[connection signal="pressed" from="Main/Piano/D5" to="." method="_on_D5_pressed"]
+[connection signal="pressed" from="Main/Piano/F4" to="." method="_on_F4_pressed"]
+[connection signal="pressed" from="Main/Piano/C5" to="." method="_on_C5_pressed"]
+[connection signal="pressed" from="Main/Piano/G4" to="." method="_on_G4_pressed"]
+[connection signal="pressed" from="Main/Piano/C4" to="." method="_on_C4_pressed"]
+[connection signal="pressed" from="Main/Piano/D4" to="." method="_on_D4_pressed"]
+[connection signal="pressed" from="Main/Piano/G3" to="." method="_on_G3_pressed"]
+[connection signal="pressed" from="Main/Piano/F5" to="." method="_on_F5_pressed"]
+[connection signal="pressed" from="Main/Piano/A3" to="." method="_on_A3_pressed"]
+[connection signal="pressed" from="Main/Piano/B4" to="." method="_on_B4_pressed"]
+[connection signal="pressed" from="Main/Piano/E5" to="." method="_on_E5_pressed"]
+[connection signal="pressed" from="Main/Piano/G5" to="." method="_on_G5_pressed"]
+[connection signal="pressed" from="Main/Piano/C5sus" to="." method="_on_C5sus_pressed"]
+[connection signal="pressed" from="Main/Piano/A4sus" to="." method="_on_A4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/D5sus" to="." method="_on_D5sus_pressed"]
+[connection signal="pressed" from="Main/Piano/G4sus" to="." method="_on_G4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/F4sus" to="." method="_on_F4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/E4" to="." method="_on_E4_pressed"]
+[connection signal="pressed" from="Main/Piano/D4sus" to="." method="_on_D4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/C4sus" to="." method="_on_C4sus_pressed"]
+[connection signal="pressed" from="Main/Piano/B3" to="." method="_on_B3_pressed"]
+[connection signal="pressed" from="Main/Piano/A3sus" to="." method="_on_A3sus_pressed"]
+[connection signal="pressed" from="Main/Piano/G3sus" to="." method="_on_G3sus_pressed"]
+[connection signal="pressed" from="Main/Piano/F5sus" to="." method="_on_F5sus_pressed"]
+[connection signal="body_entered" from="nova_animacao" to="." method="_on_nova_animacao_body_entered"]
+[connection signal="animation_finished" from="tela_1" to="." method="_on_tela_2_animation_finished"]
+[connection signal="animation_finished" from="tela_2" to="." method="_on_tela_2_animation_finished"]
+[connection signal="body_entered" from="inicio" to="." method="_on_inicio_body_entered"]
+[connection signal="timeout" from="temporizador" to="." method="_on_temporizador_timeout"]
+[connection signal="pressed" from="home" to="." method="_on_home_pressed"]
+
+[editable path="Main"]
+[editable path="Main/teclas_brancas"]

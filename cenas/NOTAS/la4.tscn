@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://script/la4.gd" type="Script" id=1]
+[ext_resource path="res://assests/erro.ogg" type="AudioStream" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="la4" type="Area2D"]
+collision_layer = 128
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+self_modulate = Color( 0.0423605, 0.992188, 0.0348816, 1 )
+shape = SubResource( 1 )
+
+[node name="error" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+[connection signal="body_entered" from="." to="." method="_on_la4_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_la4_body_exited"]

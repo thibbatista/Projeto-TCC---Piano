@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/C#4.wav-aae614060e88a23e9e0a8a2f6420fd53.sample"
+
+[deps]
+
+source_file="res://cenas/piano/Sounds/notas/C#4.wav"
+dest_files=[ "res://.import/C#4.wav-aae614060e88a23e9e0a8a2f6420fd53.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

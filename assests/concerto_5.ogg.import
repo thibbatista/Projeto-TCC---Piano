@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/concerto_5.ogg-ab4e1e9ed7a19939b9e82d0bba960232.oggstr"
+
+[deps]
+
+source_file="res://assests/concerto_5.ogg"
+dest_files=[ "res://.import/concerto_5.ogg-ab4e1e9ed7a19939b9e82d0bba960232.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

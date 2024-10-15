@@ -1,0 +1,588 @@
+[gd_scene load_steps=38 format=2]
+
+[ext_resource path="res://cenas/piano/Sounds/notas/F5.wav" type="AudioStream" id=1]
+[ext_resource path="res://cenas/piano/Sounds/notas/F#4.wav" type="AudioStream" id=2]
+[ext_resource path="res://cenas/piano/Sounds/notas/B4.wav" type="AudioStream" id=3]
+[ext_resource path="res://cenas/piano/Sounds/notas/G#4.wav" type="AudioStream" id=4]
+[ext_resource path="res://cenas/piano/Scripts/Main.gd" type="Script" id=5]
+[ext_resource path="res://cenas/piano/Sounds/notas/A#4.wav" type="AudioStream" id=6]
+[ext_resource path="res://cenas/piano/Sounds/notas/F#5.wav" type="AudioStream" id=7]
+[ext_resource path="res://cenas/piano/Images/tecla branca direita.png" type="Texture" id=8]
+[ext_resource path="res://cenas/piano/Images/tecla direita pressoinada.png" type="Texture" id=9]
+[ext_resource path="res://cenas/piano/Sounds/notas/D#5.wav" type="AudioStream" id=10]
+[ext_resource path="res://cenas/piano/Images/tecla preta pressionada.png" type="Texture" id=11]
+[ext_resource path="res://cenas/piano/Images/tecla preta.png" type="Texture" id=12]
+[ext_resource path="res://cenas/piano/Sounds/notas/G5.wav" type="AudioStream" id=13]
+[ext_resource path="res://cenas/piano/Sounds/notas/F4.wav" type="AudioStream" id=14]
+[ext_resource path="res://cenas/piano/Sounds/notas/E4.wav" type="AudioStream" id=15]
+[ext_resource path="res://cenas/piano/Sounds/notas/C5.wav" type="AudioStream" id=16]
+[ext_resource path="res://cenas/piano/Sounds/notas/D5.wav" type="AudioStream" id=17]
+[ext_resource path="res://cenas/piano/Images/retangulo_preto.png" type="Texture" id=18]
+[ext_resource path="res://cenas/piano/Sounds/notas/A4.wav" type="AudioStream" id=19]
+[ext_resource path="res://cenas/piano/Sounds/notas/C#5.wav" type="AudioStream" id=20]
+[ext_resource path="res://cenas/piano/Sounds/notas/E5.wav" type="AudioStream" id=21]
+[ext_resource path="res://cenas/piano/Sounds/notas/G4.wav" type="AudioStream" id=22]
+[ext_resource path="res://cenas/piano/Sounds/notas/G3.wav" type="AudioStream" id=23]
+[ext_resource path="res://cenas/piano/Sounds/notas/G#3.wav" type="AudioStream" id=24]
+[ext_resource path="res://cenas/piano/Sounds/notas/A#3.wav" type="AudioStream" id=25]
+[ext_resource path="res://cenas/piano/Sounds/notas/B3.wav" type="AudioStream" id=26]
+[ext_resource path="res://cenas/piano/Sounds/notas/C4.wav" type="AudioStream" id=27]
+[ext_resource path="res://cenas/piano/Sounds/notas/C#4.wav" type="AudioStream" id=28]
+[ext_resource path="res://cenas/piano/Sounds/notas/D4.wav" type="AudioStream" id=29]
+[ext_resource path="res://cenas/piano/Sounds/notas/A3.wav" type="AudioStream" id=30]
+[ext_resource path="res://cenas/piano/Sounds/notas/D#4.wav" type="AudioStream" id=31]
+[ext_resource path="res://cenas/piano/Images/tecla_esquerda_up.png" type="Texture" id=32]
+[ext_resource path="res://cenas/teclas_brancas.tscn" type="PackedScene" id=33]
+[ext_resource path="res://cenas/piano/Images/tecla_esquerda_down.png" type="Texture" id=34]
+[ext_resource path="res://cenas/piano/Images/tecla branca meio.png" type="Texture" id=74]
+[ext_resource path="res://cenas/piano/Images/tecla branca meio pressionada.png" type="Texture" id=75]
+[ext_resource path="res://cenas/piano/Images/capa preta.png" type="Texture" id=77]
+
+[node name="Main" type="Node2D"]
+position = Vector2( 58.206, 521.161 )
+z_index = -2
+script = ExtResource( 5 )
+transition_duration = 2.0
+
+[node name="Piano" type="Control" parent="."]
+margin_left = 664.302
+margin_top = 256.868
+margin_right = 704.302
+margin_bottom = 296.868
+rect_scale = Vector2( 2, 1.1 )
+
+[node name="A4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -1.18073, -267.597 )
+scale = Vector2( 0.6, 0.243977 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+
+[node name="D5" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 131.892, -269.181 )
+scale = Vector2( 0.3, 0.126667 )
+normal = ExtResource( 74 )
+pressed = ExtResource( 75 )
+
+[node name="F4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -90.6941, -269.736 )
+scale = Vector2( 0.6, 0.248455 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+
+[node name="C5" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 87.433, -271.988 )
+scale = Vector2( 0.6, 0.255172 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+
+[node name="G4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -46.2275, -269.682 )
+scale = Vector2( 0.3, 0.126667 )
+normal = ExtResource( 74 )
+pressed = ExtResource( 75 )
+
+[node name="C4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -223.792, -273.793 )
+scale = Vector2( 0.6, 0.257412 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+visibility_mode = 1
+
+[node name="D4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -179.292, -268.671 )
+scale = Vector2( 0.3, 0.124242 )
+normal = ExtResource( 74 )
+
+[node name="G3" type="TouchScreenButton" parent="Piano"]
+pause_mode = 2
+process_priority = -1
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -355.885, -271.233 )
+scale = Vector2( 0.6, 0.250694 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+visibility_mode = 1
+
+[node name="F5" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 221.079, -269.248 )
+scale = Vector2( 0.6, 0.248455 )
+normal = ExtResource( 32 )
+pressed = ExtResource( 34 )
+
+[node name="A3" type="TouchScreenButton" parent="Piano"]
+process_priority = -1
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -311.651, -269.58 )
+scale = Vector2( 0.3, 0.125455 )
+normal = ExtResource( 74 )
+visibility_mode = 1
+
+[node name="B4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 43.0703, -271.383 )
+scale = Vector2( 0.145, 0.06261 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 9 )
+
+[node name="E5" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 176.859, -270.617 )
+scale = Vector2( 0.145, 0.0620234 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 9 )
+
+[node name="G5" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( 265.045, -268.745 )
+scale = Vector2( 0.145, 0.0614369 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 9 )
+
+[node name="C5sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( 117.04, -399.6 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="A4sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( 29.393, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="D5sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( 162.293, -400.909 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="G4sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -15.827, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="F4sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -60.04, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="E4" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -134.392, -268.772 )
+scale = Vector2( 0.14566, 0.0610269 )
+z_index = -2
+normal = ExtResource( 8 )
+
+[node name="D4sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -149.178, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="C4sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -193.777, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="B3" type="TouchScreenButton" parent="Piano"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -266.885, -270.449 )
+scale = Vector2( 0.145, 0.0614369 )
+normal = ExtResource( 8 )
+pressed = ExtResource( 9 )
+
+[node name="A3sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -282.996, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="G3sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( -326.59, -401.061 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+visibility_mode = 1
+
+[node name="F5sus" type="TouchScreenButton" parent="Piano"]
+position = Vector2( 251.479, -400 )
+scale = Vector2( 0.09, 0.08 )
+normal = ExtResource( 12 )
+pressed = ExtResource( 11 )
+
+[node name="capa preta" type="Sprite" parent="Piano"]
+position = Vector2( -22.8737, -395.204 )
+scale = Vector2( 0.340396, 0.3 )
+texture = ExtResource( 77 )
+
+[node name="Sounds" type="Node2D" parent="."]
+position = Vector2( 359.858, 59.1891 )
+
+[node name="GrandPiano" type="Node2D" parent="Sounds"]
+
+[node name="G3" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 23 )
+bus = "piano"
+
+[node name="G3sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 24 )
+bus = "piano"
+
+[node name="A3" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 30 )
+bus = "piano"
+
+[node name="A3sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 25 )
+bus = "piano"
+
+[node name="B3" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 26 )
+bus = "piano"
+
+[node name="C4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 27 )
+bus = "piano"
+
+[node name="C4sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 28 )
+bus = "piano"
+
+[node name="D4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 29 )
+bus = "piano"
+
+[node name="D4sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 31 )
+bus = "piano"
+
+[node name="E4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 15 )
+bus = "piano"
+
+[node name="F4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 14 )
+bus = "piano"
+
+[node name="F4sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 2 )
+bus = "piano"
+
+[node name="G4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 22 )
+bus = "piano"
+
+[node name="G4sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 4 )
+bus = "piano"
+
+[node name="A4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 19 )
+bus = "piano"
+
+[node name="A4sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 6 )
+bus = "piano"
+
+[node name="B4" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 3 )
+bus = "piano"
+
+[node name="C5" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 16 )
+bus = "piano"
+
+[node name="C5sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 20 )
+bus = "piano"
+
+[node name="D5" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 17 )
+bus = "piano"
+
+[node name="D5sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 10 )
+bus = "piano"
+
+[node name="E5" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 21 )
+bus = "piano"
+
+[node name="F5" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 1 )
+bus = "piano"
+
+[node name="F5sus" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 7 )
+bus = "piano"
+
+[node name="G5" type="AudioStreamPlayer" parent="Sounds/GrandPiano"]
+stream = ExtResource( 13 )
+bus = "piano"
+
+[node name="sobreposta" type="Node2D" parent="."]
+
+[node name="G3_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( -3.57477, -63.0046 )
+scale = Vector2( 1.2, 0.66 )
+z_index = -1
+texture = ExtResource( 32 )
+
+[node name="G3_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( -3.71902, -65.7195 )
+scale = Vector2( 1.15, 0.66 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="C4_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 261.639, -63.0046 )
+scale = Vector2( 1.2, 0.66 )
+z_index = -1
+texture = ExtResource( 32 )
+
+[node name="C4_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 261.353, -66.4342 )
+scale = Vector2( 1.15, 0.66 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="F4_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 528.283, -63.1472 )
+scale = Vector2( 1.2, 0.66 )
+z_index = -1
+texture = ExtResource( 32 )
+
+[node name="F4_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 528.711, -65.149 )
+scale = Vector2( 1.15, 0.66 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="C5_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 884.094, -63.1472 )
+scale = Vector2( 1.2, 0.66 )
+z_index = -1
+texture = ExtResource( 32 )
+
+[node name="C5_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 884.522, -65.149 )
+scale = Vector2( 1.15, 0.66 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="F5_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 1150.79, -61.8204 )
+scale = Vector2( 1.2, 0.66 )
+z_index = -1
+texture = ExtResource( 32 )
+
+[node name="F5_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 1151.55, -64.1587 )
+scale = Vector2( 1.15, 0.66 )
+z_index = -1
+texture = ExtResource( 34 )
+
+[node name="E4_up" type="Sprite" parent="sobreposta"]
+position = Vector2( 438.266, -52.2781 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="E4_down" type="Sprite" parent="sobreposta"]
+position = Vector2( 438.45, -55.2803 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="D4_up" type="Sprite" parent="sobreposta"]
+position = Vector2( 350.16, -52.1057 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="D4_down" type="Sprite" parent="sobreposta"]
+position = Vector2( 350.769, -55.2207 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="B3_up" type="Sprite" parent="sobreposta"]
+position = Vector2( 172.618, -52.1521 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="B3_down" type="Sprite" parent="sobreposta"]
+position = Vector2( 172.2, -55.8835 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="A3_up" type="Sprite" parent="sobreposta"]
+position = Vector2( 84.9097, -52.1521 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="A3_down" type="Sprite" parent="sobreposta"]
+position = Vector2( 85.0483, -55.0691 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="G4_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 617.767, -52.7229 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="G4_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 618.332, -54.6428 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="A4_up" type="Sprite" parent="sobreposta"]
+position = Vector2( 706.077, -52.4377 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="A4_down" type="Sprite" parent="sobreposta"]
+position = Vector2( 705.073, -54.4968 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="B4_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 794.387, -52.4377 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="B4_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 794.383, -54.782 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="D5_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 973.435, -51.7229 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="D5_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 973.138, -54.6394 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="E5_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 1061.44, -51.7229 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="E5_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 1061.43, -54.6394 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="G5_UP" type="Sprite" parent="sobreposta"]
+position = Vector2( 1238.48, -50.7229 )
+scale = Vector2( 0.295, 0.151 )
+z_index = -1
+texture = ExtResource( 8 )
+
+[node name="G5_DOWN" type="Sprite" parent="sobreposta"]
+position = Vector2( 1238.34, -52.9248 )
+scale = Vector2( 0.283731, 0.150975 )
+z_index = -1
+texture = ExtResource( 9 )
+
+[node name="retangulo_preto" type="Sprite" parent="."]
+position = Vector2( 620.184, -52.9567 )
+scale = Vector2( 1.36023, 1.04641 )
+z_index = -2
+texture = ExtResource( 18 )
+
+[node name="teclas_brancas" parent="." instance=ExtResource( 33 )]
+position = Vector2( -2.80454, -19.3508 )
+
+[node name="la4" parent="teclas_brancas" index="8"]
+margin_left = 684.076
+margin_top = -18.1345
+margin_right = 736.076
+margin_bottom = 59.8655
+text = "La
+A
+440hz
+"
+
+[node name="Tween" type="Tween" parent="."]
+
+[connection signal="pressed" from="Piano/A4" to="." method="_on_A4_pressed"]
+[connection signal="released" from="Piano/A4" to="." method="_on_A4_released"]
+[connection signal="pressed" from="Piano/D5" to="." method="_on_D5_pressed"]
+[connection signal="released" from="Piano/D5" to="." method="_on_D5_released"]
+[connection signal="pressed" from="Piano/F4" to="." method="_on_F4_pressed"]
+[connection signal="released" from="Piano/F4" to="." method="_on_F4_released"]
+[connection signal="pressed" from="Piano/C5" to="." method="_on_C5_pressed"]
+[connection signal="released" from="Piano/C5" to="." method="_on_C5_released"]
+[connection signal="pressed" from="Piano/G4" to="." method="_on_G4_pressed"]
+[connection signal="released" from="Piano/G4" to="." method="_on_G4_released"]
+[connection signal="pressed" from="Piano/C4" to="." method="_on_C4_pressed"]
+[connection signal="released" from="Piano/C4" to="." method="_on_C4_released"]
+[connection signal="pressed" from="Piano/D4" to="." method="_on_D4_pressed"]
+[connection signal="released" from="Piano/D4" to="." method="_on_D4_released"]
+[connection signal="pressed" from="Piano/G3" to="." method="_on_G3_pressed"]
+[connection signal="released" from="Piano/G3" to="." method="_on_G3_released"]
+[connection signal="pressed" from="Piano/F5" to="." method="_on_F5_pressed"]
+[connection signal="released" from="Piano/F5" to="." method="_on_F5_released"]
+[connection signal="pressed" from="Piano/A3" to="." method="_on_A3_pressed"]
+[connection signal="released" from="Piano/A3" to="." method="_on_A3_released"]
+[connection signal="pressed" from="Piano/B4" to="." method="_on_B4_pressed"]
+[connection signal="released" from="Piano/B4" to="." method="_on_B4_released"]
+[connection signal="pressed" from="Piano/E5" to="." method="_on_E5_pressed"]
+[connection signal="released" from="Piano/E5" to="." method="_on_E5_released"]
+[connection signal="pressed" from="Piano/G5" to="." method="_on_G5_pressed"]
+[connection signal="released" from="Piano/G5" to="." method="_on_G5_released"]
+[connection signal="pressed" from="Piano/C5sus" to="." method="_on_C5sus_pressed"]
+[connection signal="released" from="Piano/C5sus" to="." method="_on_C5sus_released"]
+[connection signal="pressed" from="Piano/A4sus" to="." method="_on_A4sus_pressed"]
+[connection signal="released" from="Piano/A4sus" to="." method="_on_A4sus_released"]
+[connection signal="pressed" from="Piano/D5sus" to="." method="_on_D5sus_pressed"]
+[connection signal="released" from="Piano/D5sus" to="." method="_on_D5sus_released"]
+[connection signal="pressed" from="Piano/G4sus" to="." method="_on_G4sus_pressed"]
+[connection signal="released" from="Piano/G4sus" to="." method="_on_G4sus_released"]
+[connection signal="pressed" from="Piano/F4sus" to="." method="_on_F4sus_pressed"]
+[connection signal="released" from="Piano/F4sus" to="." method="_on_F4sus_released"]
+[connection signal="pressed" from="Piano/E4" to="." method="_on_E4_pressed"]
+[connection signal="released" from="Piano/E4" to="." method="_on_E4_released"]
+[connection signal="pressed" from="Piano/D4sus" to="." method="_on_D4sus_pressed"]
+[connection signal="released" from="Piano/D4sus" to="." method="_on_D4sus_released"]
+[connection signal="pressed" from="Piano/C4sus" to="." method="_on_C4sus_pressed"]
+[connection signal="released" from="Piano/C4sus" to="." method="_on_C4sus_released"]
+[connection signal="pressed" from="Piano/B3" to="." method="_on_B3_pressed"]
+[connection signal="released" from="Piano/B3" to="." method="_on_B3_released"]
+[connection signal="pressed" from="Piano/A3sus" to="." method="_on_A3sus_pressed"]
+[connection signal="released" from="Piano/A3sus" to="." method="_on_A3sus_released"]
+[connection signal="pressed" from="Piano/G3sus" to="." method="_on_G3sus_pressed"]
+[connection signal="released" from="Piano/G3sus" to="." method="_on_G3sus_released"]
+[connection signal="pressed" from="Piano/F5sus" to="." method="_on_F5sus_pressed"]
+[connection signal="released" from="Piano/F5sus" to="." method="_on_F5sus_released"]
+
+[editable path="teclas_brancas"]

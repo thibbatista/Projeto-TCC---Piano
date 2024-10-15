@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/A3.wav-8c305a8d1be83d2debc2c1b6e4b05a66.sample"
+
+[deps]
+
+source_file="res://cenas/piano/Sounds/notas/A3.wav"
+dest_files=[ "res://.import/A3.wav-8c305a8d1be83d2debc2c1b6e4b05a66.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
